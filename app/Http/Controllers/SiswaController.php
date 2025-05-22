@@ -39,7 +39,7 @@ class SiswaController extends Controller
     }
 
     public function edit(Siswa $siswa)
-    {
+    {   
         return view('siswas.edit', compact('siswa'));
     }
 

@@ -3,16 +3,16 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiswaController;
+use App\Models\Siswa;
+
 
 Route::resource('siswas', SiswaController::class)
     ->middleware(['auth']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/', function () {
+    $totalSiswa = Siswa::count();
+    return view('dashboard', compact('totalSiswa'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

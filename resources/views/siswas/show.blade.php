@@ -48,7 +48,7 @@
             </div>  
 
             <div class="mt-6 flex justify-end space-x-3">
-                <a href="{{ route('siswas.edit', $siswa->id) }}" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                <a href="{{ route('siswas.edit', $siswa->id) }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                     Edit Data
                 </a>
             </div>

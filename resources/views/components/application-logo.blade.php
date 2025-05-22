@@ -1,3 +1,3 @@
 <div>
-    <h1>Login Samuel</h1>
+    <h1>Website Samuel</h1>
 </div>
